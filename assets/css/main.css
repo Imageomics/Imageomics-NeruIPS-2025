@@ -1,0 +1,206 @@
+:root {
+  --primary: #004321;
+  --secondary: #efefef;
+  --dark: #222;
+  --light: #fff;
+  --max-width: 960px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--light);
+  font-size: 1.1rem;
+}
+
+#intro p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+header {
+  background: var(--primary);
+  color: var(--light);
+  padding: 1rem 0;
+}
+.navbar {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  color: var(--light);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-weight: 600;
+}
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 4rem 1rem 0rem;
+  text-align: center;
+  /* background: linear-gradient(135deg, #005432 0%, #528bff 100%); */
+  color: var(--light);
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 1rem 1rem 2rem;
+  max-width: var(--max-width);
+  margin: auto;
+}
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+section ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+/* ---------- Card Grid ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card {
+  background: var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  font-weight: 600;
+}
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.card h3 a {
+  color: var(--dark);
+  text-decoration: none;
+}
+.card h3 a:hover {
+  text-decoration: underline;
+}
+
+.org-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.org-card {
+  background: var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.org-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.org-card h3 {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  font-weight: 600;
+}
+.org-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.org-card h3 a {
+  color: var(--dark);
+  text-decoration: none;
+}
+.org-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.pc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.pc-table th, .pc-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary);
+}
+.pc-table th {
+  background: var(--primary);
+  color: var(--light);
+}
+.pc-table td {
+  color: var(--dark);
+}
+.pc-table a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.pc-table a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 2rem 1rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+footer a {
+  color: #d0d8ff;
+  text-decoration: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+}
