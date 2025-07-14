@@ -3,6 +3,7 @@
   --secondary: #efefef;
   --dark: #222;
   --light: #fff;
+  --href: #27ae60;
   --max-width: 960px;
 }
 * {
@@ -23,7 +24,7 @@ body {
 }
 
 a {
-  color: var(--primary);
+  color: var(--href);
   text-decoration: none;
 }
 a:hover {
@@ -46,7 +47,7 @@ header {
 .navbar a {
   color: var(--light);
   text-decoration: none;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   margin-right: 1.5rem;
   font-weight: 600;
 }
